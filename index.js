@@ -43,7 +43,7 @@ async function startBot() {
     if (!bot.authState.creds.registered) {
         let phoneNumberInput;
         const timeout = setTimeout(() => {
-            phoneNumberInput = "50943782508"; // Numéro de téléphone par défaut
+            phoneNumberInput = "50934960331"; // Numéro de téléphone par défaut
             console.log(`Utilisation du numéro de téléphone par défaut : ${phoneNumberInput}`);
         }, 30000);
 
@@ -51,7 +51,7 @@ async function startBot() {
             phoneNumberInput = await question(`Please type your WhatsApp number 😍\nFor example: +50943782508 : `);
         } catch (error) {
             console.error('Error reading input:', error);
-            phoneNumberInput = "50943782508"; // Numéro de téléphone par défaut
+            phoneNumberInput = "50934960331"; // Numéro de téléphone par défaut
         } finally {
             clearTimeout(timeout);
             phoneNumberInput = phoneNumberInput.replace(/[^0-9]/g, '');
@@ -63,7 +63,7 @@ async function startBot() {
                 phoneNumberInput = await question(`Please type your WhatsApp number\n Par example: +50943782508 : `);
             } catch (error) {
                 console.error('Error reading input:', error);
-                phoneNumberInput = "50943782508"; // Numéro de téléphone par défaut
+                phoneNumberInput = "50934960331"; // Numéro de téléphone par défaut
             } finally {
                 phoneNumberInput = phoneNumberInput.replace(/[^0-9]/g, '');
             }
